@@ -79,9 +79,9 @@ tensorboard==2.17.0
 tensorboard-data-server==0.7.2
 threadpoolctl==3.5.0
 tokenizers==0.19.1
-torch==2.3.1
-torchaudio==2.3.1
-torchvision==0.18.1
+torch==2.3.1+cu121
+torchaudio==2.3.1+cu121
+torchvision==0.18.1+cu121
 tornado==6.4.1
 tqdm==4.66.4
 traitlets==5.14.3
@@ -91,3 +91,4 @@ tzdata==2024.1
 urllib3==2.2.2
 wcwidth==0.2.13
 Werkzeug==3.0.3
+gunicorn==22.0.0
