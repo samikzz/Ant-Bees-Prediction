@@ -6,7 +6,7 @@ from transformers import AutoImageProcessor
 
 app = Flask(__name__)
 processor = AutoImageProcessor.from_pretrained("microsoft/resnet-50")
-model = torch.load('resnet_transfer_learning.pt').to('cpu')
+model = torch.load('resnet_transfer_learning.pt', map_location=torch.device('cpu'))
 
 def Predictor(img):
     out = model(**img)[0].argmax()
